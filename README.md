@@ -1,9 +1,9 @@
 Welcome to our artifact GitHub repository!
 
-# Kernel-level events
+# Kernel-level Events
 We present an artifact that comprises kernel-level events collected through the utilization of well-known open-source tools, Elasticsearch and Kibana, renowned for their robust log management and analysis capabilities.
 
-# Two workloads
+# Two Workloads
 We defined reports thoughtfully organized into two distinct types of workloads: light and heavy. These workloads are executed at varying periods to provide you with a comprehensive range of scenarios. 
 
 # Four Types of Noise
