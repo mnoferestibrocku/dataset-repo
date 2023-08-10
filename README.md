@@ -6,7 +6,7 @@ We present an artifact that comprises kernel-level events collected through the 
 # Two workloads
 We defined reports thoughtfully organized into two distinct types of workloads: light and heavy. These workloads are executed at varying periods to provide you with a comprehensive range of scenarios. 
 
-# Four types of Noise
+# Four Types of Noise
 Our commitment to realism extends further as we introduce four types of simulated noise—CPU, I/O, Network, and Memory. 
 These simulated noises replicate real-world disruptions and challenges, enhancing the authenticity of the artifact and offering a more accurate representation of performance and analysis accuracy challenges.
 
