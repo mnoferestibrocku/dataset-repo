@@ -1,0 +1,58 @@
+System:
+  Host: morteza-PC Kernel: 5.19.0-46-generic x86_64 bits: 64
+    Desktop: GNOME 42.9 Distro: Ubuntu 22.04.2 LTS (Jammy Jellyfish)
+Machine:
+  Type: Desktop System: Dell product: XPS 8950 v: N/A
+    serial: <superuser required>
+  Mobo: Dell model: 0R6PCT v: A01 serial: <superuser required> UEFI: Dell
+    v: 1.4.0 date: 06/09/2022
+CPU:
+  Info: 12-core (8-mt/4-st) model: 12th Gen Intel Core i7-12700K bits: 64
+    type: MST AMCP cache: L2: 12 MiB
+  Speed (MHz): avg: 3142 min/max: 800/4900:5000:3800 cores: 1: 800 2: 3600
+    3: 3600 4: 3600 5: 3600 6: 3600 7: 3600 8: 3600 9: 2855 10: 3600 11: 3600
+    12: 3600 13: 3600 14: 800 15: 3600 16: 3600 17: 3600 18: 3600 19: 3600
+    20: 800
+Graphics:
+  Device-1: NVIDIA GA104 [GeForce RTX 3060 Ti Lite Hash Rate] driver: nouveau
+    v: kernel
+  Display: wayland server: X.Org v: 1.22.1.1 with: Xwayland v: 22.1.1
+    compositor: gnome-shell driver: X: loaded: nouveau
+    unloaded: fbdev,modesetting,vesa gpu: nouveau resolution:
+    1: 1920x1080~60Hz 2: 1920x1080~60Hz
+  OpenGL: renderer: llvmpipe (LLVM 15.0.7 256 bits)
+    v: 4.5 Mesa 22.2.5-0ubuntu0.1~22.04.3
+Audio:
+  Device-1: Intel driver: snd_hda_intel
+  Device-2: NVIDIA GA104 High Definition Audio driver: snd_hda_intel
+  Sound Server-1: ALSA v: k5.19.0-46-generic running: yes
+  Sound Server-2: PulseAudio v: 15.99.1 running: yes
+  Sound Server-3: PipeWire v: 0.3.48 running: yes
+Network:
+  Device-1: Realtek Killer E3000 2.5GbE driver: r8169
+  IF: enp3s0 state: down mac: 00:be:43:ba:a0:d8
+  Device-2: Intel Wi-Fi 6 AX210/AX211/AX411 160MHz driver: iwlwifi
+  IF: wlp4s0 state: up mac: 54:6c:eb:c9:3e:93
+  IF-ID-1: virbr0 state: down mac: 52:54:00:8f:5b:75
+Bluetooth:
+  Device-1: Intel AX210 Bluetooth type: USB driver: btusb
+  Report: hciconfig ID: hci0 state: up address: 54:6C:EB:C9:3E:97
+RAID:
+  Hardware-1: Intel Volume Management Device NVMe RAID Controller driver: vmd
+Drives:
+  Local Storage: total: 1.84 TiB used: 506.62 GiB (26.9%)
+  ID-1: /dev/nvme0n1 vendor: SK Hynix model: PC801 NVMe 1TB
+    size: 953.87 GiB
+  ID-2: /dev/sda vendor: Toshiba model: DT01ACA100 size: 931.51 GiB
+Partition:
+  ID-1: / size: 221.81 GiB used: 141.73 GiB (63.9%) fs: ext4 dev: /dev/sda6
+  ID-2: /boot/efi size: 196 MiB used: 88.4 MiB (45.1%) fs: vfat
+    dev: /dev/nvme0n1p1
+Swap:
+  Alert: No swap data was found.
+Sensors:
+  System Temperatures: cpu: 35.0 C mobo: 27.0 C
+  Fan Speeds (RPM): cpu: 686 mobo: 697
+Info:
+  Processes: 518 Uptime: 27d 19h 0m Memory: 31.07 GiB used: 9.5 GiB (30.6%)
+  Shell: Bash inxi: 3.3.13
