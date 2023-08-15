@@ -1,0 +1,37 @@
+{
+  "trigger": {
+    "schedule": {
+      "interval": "5m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": ["your_index"],
+        "body": {
+          "size": 5,
+          "query": {
+            "match_all": {}
+          },
+          "sort": [
+            {
+              "your_field": {
+                "order": "desc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "condition": {
+    "always": {}
+  },
+  "actions": {
+    "log": {
+      "logging": {
+        "text": "Top 5 events: {{ctx.payload.hits.hits}}"
+      }
+    }
+  }
+}
