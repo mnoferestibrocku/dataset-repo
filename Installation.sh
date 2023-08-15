@@ -35,10 +35,15 @@ sudo apt-get install logstash
 ## After extract the dataset, move "Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv" into the home dirextory
 ## Go to address http://localhost:5601/ in your browser and login to kibana (default username='elastic' and password='elastic')
 ## Create new index in elasticsearch
-curl -XPUT "http://localhost:9200/iotdataset"
+curl -XPUT "http://localhost:9200/dnniotdataset"
+## Download import.py and put it in the home directory
+## Run import.py
+python3 import.py
 
 
 ## Step  5 : Create Workloads
+## Download workloads from the different-loads directory
+
 
 
 ## Step 6 : INSTALL stress-ng
