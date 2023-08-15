@@ -28,8 +28,13 @@ sudo apt-get install apt-transport-https
 echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
 sudo apt-get update && sudo apt-get install elasticsearch
 sudo apt-get install kibana
+sudo apt-get install logstash
 
 ## Step 4 : Download and Import Dataset
+## Sign to the site and Download the file from https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot
+## After extract the dataset, move "Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv" into the home dirextory
+## Go to address http://localhost:5601/ in your browser and login to kibana (default username='elastic' and password='elastic')
+
 
 
 ## Step  5 : Create Workloads
