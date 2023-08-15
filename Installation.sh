@@ -34,7 +34,8 @@ sudo apt-get install logstash
 ## Sign to the site and Download the file from https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot
 ## After extract the dataset, move "Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv" into the home dirextory
 ## Go to address http://localhost:5601/ in your browser and login to kibana (default username='elastic' and password='elastic')
-
+## Create new index in elasticsearch
+curl -XPUT "http://localhost:9200/iotdataset"
 
 
 ## Step  5 : Create Workloads
