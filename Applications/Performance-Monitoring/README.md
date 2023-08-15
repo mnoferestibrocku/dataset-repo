@@ -1,4 +1,4 @@
-# Performance Monitoring Applicatiob of the Proposed Artifact
+# Performance Monitoring Application of the Proposed Artifact
 A method commonly employed to assess the performance of multi-threaded applications revolves around the examination of the critical path. 
 The critical path provides a visual representation of instances when a request encountered delays or was obstructed. Such paths prove invaluable for uncovering the origins and reasons behind latency occurrences.
 This application utilizes the algorithm provided by the open-source trace analysis software Trace Compass 8.2.0 to compute the critical paths of the relevant threads. You can follow the steps towards this application:
