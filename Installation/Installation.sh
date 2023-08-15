@@ -51,7 +51,3 @@ curl -XPOST "http://localhost:9200/_watcher/watch/my-watch/_start"
 
 sudo apt-get install stress-ng
 
-
-## Step 7 : RUN Tracing
-
-sudo bash tracing.sh
