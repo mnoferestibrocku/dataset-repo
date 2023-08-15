@@ -15,4 +15,10 @@ apt-get install liblttng-ust-dev
 apt-get install liblttng-ust-agent-java
 
 
-## Step 1 : INSTALL JAVA 
+## Step 2 : INSTALL JAVA 
+
+
+
+## Step 3 : INSTALL stress-ng
+
+apt-get install stress-ng
