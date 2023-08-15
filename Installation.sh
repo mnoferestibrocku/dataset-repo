@@ -43,7 +43,8 @@ python3 import.py
 
 ## Step  5 : Create Workloads
 ## Download workloads from the different-loads directory
-
+curl -XPUT "http://localhost:9200/_watcher/watch/your-watch-id" -H "Content-Type: application/json" -d @my_watcher.json
+curl -XPOST "http://localhost:9200/_watcher/watch/my-watch/_start"
 
 
 ## Step 6 : INSTALL stress-ng
