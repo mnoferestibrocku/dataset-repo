@@ -20,6 +20,10 @@ While you can run the experiment in any environment, it's worth noting that the 
 # Kernel Tracing
 To capture these events, we employ LTTng (Linux Tracing Toolkit: next generation), an open-source tracing tool. LTTng is renowned for its minimal overhead and scalability, making it suitable for tracing both the Linux kernel and user space applications. Each trace event is characterized by attributes such as Timestamp, CPU, event type (e.g., system call, interrupt), event details (e.g., IP address), process ID (PID), and thread ID (TID). To gather these essential attributes, LTTng utilizes tracepoints, strategically positioned hooks within the code that permit function probes to attach during runtime.
 
+The collection of traces is detailed in the "[KernelTracing](https://github.com/mnoferestibrocku/dataset-repo/tree/main/KernelTracing)" directory, which includes:
+   - Step 1: Running LTTng
+   - Step 2: Building the Experiment Scenarios
+   - Step 3: Collecting Traces
 In our artifact, we establish a channel composed of eight buffers, each boasting a size of 64MB. All system calls and events are enabled within this channel. Furthermore, we include context information including process name, PID, and TID to the events. The specifics of tracing are encapsulated in the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script, which outlines the tracing configurations and procedures.
 
 
