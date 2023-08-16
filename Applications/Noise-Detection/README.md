@@ -31,6 +31,9 @@ For each noise, a seprate scipt has been written. To execute, you should downloa
 ## Step 4: Noise Analysis
 DiskNoise.png provides a visual representation of the disk I/O-related metrics computed from the artifact, encompassing all 12 disks within the system. For a more detailed examination, one can zoom in on a specific time frame, as demonstrated in DiskNoise-ZoomIn.png. This close-up view exposes a prolonged wait time for Disk 0. Such an observation prompts a comprehensive analysis to precisely identify the underlying origin of this noise. A deeper investigation into the extended wait duration for Disk 0 becomes crucial for the optimization of overall system performance and the assurance of dependable disk I/O operations.
 
+https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/DiskNoise-ZoomIn.png
+
+
 The metrics related to the network are illustrated in NetworkNoise.png and NetworkNoise-ZoomIn.png. A more precise examination of specific time segments exposes instances such as Process ID 46 expending approximately 1 second on a receive packet—an interval significantly deviating from the norm, potentially indicating the presence of noise. 
 
 
