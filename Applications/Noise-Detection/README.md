@@ -32,11 +32,14 @@ For each noise, a seprate scipt has been written. To execute, you should downloa
 Following figure provides a visual representation of the disk I/O-related metrics computed from the artifact, encompassing all 12 disks within the system.
 ![plot](https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/DiskNoise.png)
 
-For a more detailed examination, one can zoom in on a specific time frame, as demonstrated in DiskNoise-ZoomIn.png. This close-up view exposes a prolonged wait time for Disk 0. Such an observation prompts a comprehensive analysis to precisely identify the underlying origin of this noise. A deeper investigation into the extended wait duration for Disk 0 becomes crucial for the optimization of overall system performance and the assurance of dependable disk I/O operations.
+For a more detailed examination, one can zoom in on a specific time frame, as demonstrated in the following figure. This close-up view exposes a prolonged wait time for Disk 0. Such an observation prompts a comprehensive analysis to precisely identify the underlying origin of this noise. A deeper investigation into the extended wait duration for Disk 0 becomes crucial for the optimization of overall system performance and the assurance of dependable disk I/O operations.
 ![plot](https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/DiskNoise-ZoomIn.png)
 
-The metrics related to the network are illustrated in NetworkNoise.png and NetworkNoise-ZoomIn.png. A more precise examination of specific time segments exposes instances such as Process ID 46 expending approximately 1 second on a receive packet—an interval significantly deviating from the norm, potentially indicating the presence of noise. 
+The metrics related to the network are illustrated in the following figure.
+![plot](https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/NetworkNoise.png)
 
+A more precise examination of specific time segments exposes instances such as Process ID 46 expending approximately 1 second on a receive packet—an interval significantly deviating from the norm, potentially indicating the presence of noise. 
+![plot](https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/NetworkNoise-ZoomIn.png)
 
 ## Conclusion
 In our experiment, we introduced various noise types to emulate real-world challenges in the Elasticsearch environment, encompassing factors such as CPU contention, network congestion, disk latency, and memory constraints. This diversity of noise sources presents an opportunity to apply a range of noise detection approaches to our collected artifact. Each approach utilizes distinct techniques, algorithms, and heuristics to analyze performance data and identify patterns associated with different noise types and their root causes. Through this comprehensive analysis, we can gain insights into the effectiveness and accuracy of each approach under diverse noise conditions. The enriched artifact, featuring multiple noise scenarios, becomes a valuable dataset for comparative analysis, providing researchers and practitioners with a platform for benchmarking and evaluating noise detection algorithms in complex, real-world environments. 
