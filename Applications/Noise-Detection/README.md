@@ -3,7 +3,8 @@ Performance analysis serves a dual purpose: it not only fine-tunes the utilizati
 
 Noises entail disruptions in performance that arise when a process encounters delays or interruptions while awaiting CPU or non-CPU resources like Disk I/O, Network I/O, or Memory. Observing kernel events can shed light on the characteristics of these noises and their underlying origins. Utilizing Trace Compase we wrote several script to visualize the Disk, Network, Interupt, and CPU noises.
 
-## Step 1: Environment Setup: The process of setting up the required environment is documented in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory. It consists of the following steps:
+## Step 1: Environment Setup: 
+The process of setting up the required environment is documented in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory. It consists of the following steps:
    - Install LTTNG
    - Install Java
    - Install Elasticsearch and Kibana
@@ -11,7 +12,8 @@ Noises entail disruptions in performance that arise when a process encounters de
    - Create Workloads
    - Install stress-ng
 
-## Step 2: Trace Collection: The collection of traces is detailed in the "[KernelTracing](https://github.com/mnoferestibrocku/dataset-repo/tree/main/KernelTracing)" directory, which includes:
+## Step 2: Trace Collection: 
+The collection of traces is detailed in the "[KernelTracing](https://github.com/mnoferestibrocku/dataset-repo/tree/main/KernelTracing)" directory, which includes:
    - Running LTTng
    - Building the Experiment Scenarios
    - Collecting Traces
