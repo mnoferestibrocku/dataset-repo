@@ -28,7 +28,8 @@ We present three separate applications that showcase the use-ability of our prop
 * Noise Detection: The second application emphasizes noise detection and in-depth root cause analysis through the utilization of kernel events. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
 * Software Phase Detection: Lastly, our artifact finds application in software phase detection through the monitoring of kernel-level events. Each of these applications highlights a distinct capability of our artifact within the domain of performance engineering research topics. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
 
-* 
 
-This enhanced artifact enables researchers to evaluate the system's performance, resilience, and effectiveness in handling disruptive conditions. By leveraging this artifact, they can gain valuable insights into optimizing system performance, identifying potential vulnerabilities, and developing robust strategies to mitigate the impact of disruptive conditions. 
+# Conclusion
+
+This enriched artifact empowers researchers to assess system performance, resilience, and effectiveness when faced with disruptive scenarios. Through its utilization, valuable insights can be obtained for enhancing system performance, recognizing vulnerabilities, and formulating effective strategies to counter the effects of disruptions.
 
