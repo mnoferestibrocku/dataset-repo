@@ -17,18 +17,18 @@ Noises entail disruptions in performance that arise when a process encounters de
    - Collecting Traces
 
 
-## Step 1: Install Trace Compass and Import the Artifact
+## Step 3: Install Trace Compass and Import the Artifact
 You can follow https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Performance-Monitoring/README.md for this step. 
 
-## Step 2: Enable Javascript
+## Step 4: Enable Javascript
 For Javascript, the feature is available through the Tools -> Add-ons... under the Analyses category. You can search for the Trace Compass Scripting Javascript (Incubation) feature and click ``Finish``.
 It will automatically install the required Trace Compass Scripting (Incubation) feature and all related features to edit and execute javascript with EASE.
 After Trace Compass restart, the feature will be available.
 
-## Step 3: Run the scripts
+## Step 5: Run the scripts
 For each noise, a seprate scipt has been written. To execute, you should download and past it in the Trace Compass project. Then right click and select "Run As" and then "EASE Script". You can refer to this document for furthur information about Ease scripting (https://archive.eclipse.org/tracecompass.incubator/doc/org.eclipse.tracecompass.incubator.scripting.doc.user/User-Guide.html#Create_and_execute_a_script).
 
-## Step 4: Noise Analysis
+## Step 6: Noise Analysis
 Following figure provides a visual representation of the disk I/O-related metrics computed from the artifact, encompassing all 12 disks within the system.
 ![plot](https://github.com/mnoferestibrocku/dataset-repo/blob/main/Applications/Noise-Detection/DiskNoise.png)
 
