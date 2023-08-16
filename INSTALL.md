@@ -9,9 +9,9 @@ This artifact is divided into three main sections:
    - Step 6: Install stress-ng
 
 2. Trace Collection: The collection of traces is detailed in the "[KernelTracing](https://github.com/mnoferestibrocku/dataset-repo/tree/main/KernelTracing)" directory, which includes:
-   - Running LTTng
-   - Building the Experiment Scenarios
-   - Collecting Traces
+   - Step 1: Running LTTng
+   - Step 2: Building the Experiment Scenarios
+   - Step 3: Collecting Traces
 
 3. Applications over the Collected Trace: The utilization of the ollected trace for various applications is explained in the "[Applications](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications)" directory. This section covers:
    - Performance Monitoring
