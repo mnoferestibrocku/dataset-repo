@@ -5,13 +5,13 @@ The repository also contains the raw trace data we've collected. Throughout the 
 
 # Experiment Setup
 To generate the artifact, you need a fresh installation of "Linux Ubuntu 22.04.2 LTS," which should include default applications and be free from any third-party software installations. Following this, the artifact requires a series of steps to set up the essential tools:
-
-*Step 1: Install LTTNG
-*Step 2: Install Java
-*Step 3: Install Elasticsearch and Kibana
-*Step 4: Download and Import Dataset into Elasticsearch
-*Step 5: Create Workloads
-*Step 6: Install stress-ng
+ 
+* Step 1: Install LTTNG
+* Step 2: Install Java
+* Step 3: Install Elasticsearch and Kibana
+* Step 4: Download and Import Dataset into Elasticsearch
+* Step 5: Create Workloads
+* Step 6: Install stress-ng
 
 Follow these straightforward instructions to establish the necessary tools and prepare your environment for further exploration. The scripts and workloads are detailed in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory.
 
