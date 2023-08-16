@@ -1,7 +1,7 @@
 # Noise Detection  Application of the Proposed Artifact
 Performance analysis serves a dual purpose: it not only fine-tunes the utilization of system resources but also plays a crucial role in enhancing system reliability. The emergence of non-deterministic and undesired variations, referred to as performance noise, significantly impacts the anticipated or desired reliability of a system. This noise can lead to decreased throughput, heightened latency, inefficient resource utilization, and an overall decline in system performance.
 
-Noises entail disruptions in performance that arise when a process encounters delays or interruptions while awaiting CPU or non-CPU resources like Disk I/O, Network I/O, or Memory. Observing kernel events can shed light on the characteristics of these noises and their underlying origins. Utilizing Trace Compase we wrote several script to visualize the Disk, Network, Interupt, and CPU noises.
+Noises entail disruptions in performance that arise when a process encounters delays or interruptions while awaiting CPU or non-CPU resources like Disk I/O, Network I/O, or Memory. Observing kernel events can shed light on the characteristics of these noises and their underlying origins. Utilizing Trace Compase we wrote several script to visualize the Disk, Network, Interupt, and CPU noises. You can follow the steps towards this application (You can skip the first two steps and utilize the [collected traces](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Trace-RawData) directly).
 
 ## Step 1: Environment Setup 
 The process of setting up the required environment is documented in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory. It consists of the following steps:
