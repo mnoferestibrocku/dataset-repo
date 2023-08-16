@@ -3,21 +3,32 @@ Welcome to our GitHub repository, where we present an artifact housing kernel-le
 
 The repository also contains the raw trace data we've collected. Throughout the experiment, we gathered a total of 24,263,691 events by capturing both kernel events and system calls. Our artifact introduces three distinct applications. The first focuses on performance analysis, utilizing kernel events for effective monitoring. The second application is dedicated to noise detection and root cause analysis, leveraging kernel events once again. Lastly, the third application explores software phase detection through kernel-level monitoring. These applications showcase the artifact's ability to aid researchers in assessing system performance, resilience, and efficiency, especially in the face of disruptive conditions.
 
+# Experiment Setup
 
-# Performance Engineering
-Performance engineering is a proactive and systematic approach aimed at designing, building, and enhancing software systems to ensure their efficient and reliable operation. It involves observing and measuring the operational behavior of a software system without interference, assessing performance metrics like response times, throughput, and resource utilization. This entails delving into kernel-level events related to performance monitoring, which play a significant role in understanding system behavior and diagnosing performance-related issues. Kernel-level events offer insights into how both the operating system and hardware resources are utilized. This information empowers system administrators, developers, and performance analysts to optimize and troubleshoot the system effectively.
+# Kernel Tracing
 
+# Experiment Scenario
+Following figure gives an overview of the scenario used to create the system artifact. 
+![image](https://github.com/mnoferestibrocku/dataset-repo/assets/131692985/5a332c24-baa0-48a9-b823-e9d345110a70)
 
+To assess the system's performance, we define two separate workloads:
+* Light-Load Scenario: This workload involves running two reports every 20 seconds. It is designed to simulate a situation with low processing demands, helping us evaluate the system's performance under minimal stress.
+* Heavy-Load Scenario: In this workload, we generate 10 reports every 40 seconds. This aims to simulate a scenario with more data and higher computational demands, putting increased processing pressure on the system.
+
+The irregular and undesired fluctuations in system behavior, known as performance noise, can impact the expected dependability of a system. To make the artifact more realistic and replicate real-world situations, we introduce four types of noise into the system. 
+* CPU noise: The CPU noise is initiated  after 1200 seconds and lasts for 120 seconds (as shown in Figure~\ref{fig:artifactscenario}). This noise simulates conditions of high CPU utilization or intensive processing activities which can affect the system performance. It is used to evaluate the system's capability to manage resource-intensive tasks and sustain  responsiveness under heavy CPU-intensive workloads.
+* I/O noise: The I/O noise is activated at 1380 seconds and continues for 120 seconds. It emulates increased input/output (I/O) operations or data transfer activities that can potentially impact disk or storage performance. This noise enables the assessment of the system's performance when dealing with high I/O loads and its ability to handle data-intensive operations.
+* Network noise: The network noise is introduced at 1560 seconds and persists for 120 seconds. It simulates network congestion, latency, or fluctuations in network connectivity, which can affect data transmission and communication between system components. By incorporating network noise, we can evaluate the system's resilience to network-related challenges and its ability to maintain effective data exchange under adverse network conditions.
+* Memory noise: The memory noise is activated at 1740 seconds and lasts for 120 seconds. It represents increased memory usage or memory-related issues that can impact system performance and stability. This noise helps assess the system's ability to handle memory-intensive tasks and its responsiveness in memory-constrained situations.
+
+# Artifact Applications
  
+We present three separate applications that showcase the use-ability of our proposed artifact. 
+* Performance Monitoring: The first application focuses on performance analysis, highlighting the effective monitoring of system performance using kernel events. Detailed descriptions and relevant figures for this application are available in the "Applications/Performance-Monitoring" directory.
+* Noise Detection: The second application emphasizes noise detection and in-depth root cause analysis through the utilization of kernel events. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
+* Software Phase Detection: Lastly, our artifact finds application in software phase detection through the monitoring of kernel-level events. Each of these applications highlights a distinct capability of our artifact within the domain of performance engineering research topics. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
 
-# Kernel-level Events
-We present an artifact that comprises kernel-level events collected through the utilization of well-known open-source tools, Elasticsearch and Kibana, renowned for their robust log management and analysis capabilities.
+* 
 
-# Two Workloads
-We defined reports thoughtfully organized into two distinct types of workloads: light and heavy. These workloads are executed at varying periods to provide you with a comprehensive range of scenarios. 
+This enhanced artifact enables researchers to evaluate the system's performance, resilience, and effectiveness in handling disruptive conditions. By leveraging this artifact, they can gain valuable insights into optimizing system performance, identifying potential vulnerabilities, and developing robust strategies to mitigate the impact of disruptive conditions. 
 
-# Four Types of Noise
-Our commitment to realism extends further as we introduce four types of simulated noise—CPU, I/O, Network, and Memory. 
-These simulated noises replicate real-world disruptions and challenges, enhancing the authenticity of the artifact and offering a more accurate representation of performance and analysis accuracy challenges.
-
-We invite you to explore, utilize, and contribute to this invaluable resource as we collectively work towards advancing performance engineering research and applications.
