@@ -18,6 +18,10 @@ Follow these straightforward instructions to establish the necessary tools and p
 While you can run the experiment in any environment, it's worth noting that the provided dataset was generated on a machine with specifications outlined in the "[system-info.txt](https://github.com/mnoferestibrocku/dataset-repo/blob/main/system-info.txt)" file.
 
 # Kernel Tracing
+To capture these events, we employ LTTng (Linux Tracing Toolkit: next generation), an open-source tracing tool. LTTng is renowned for its minimal overhead and scalability, making it suitable for tracing both the Linux kernel and user space applications. Each trace event is characterized by attributes such as Timestamp, CPU, event type (e.g., system call, interrupt), event details (e.g., IP address), process ID (PID), and thread ID (TID). To gather these essential attributes, LTTng utilizes tracepoints, strategically positioned hooks within the code that permit function probes to attach during runtime.
+
+In our artifact, we establish a channel composed of eight buffers, each boasting a size of 64MB. All system calls and events are enabled within this channel. Furthermore, we include context information including process name, PID, and TID to the events. The specifics of tracing are encapsulated in the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script, which outlines the tracing configurations and procedures.
+
 
 # Experiment Scenario
 Following figure gives an overview of the scenario used to create the system artifact. 
