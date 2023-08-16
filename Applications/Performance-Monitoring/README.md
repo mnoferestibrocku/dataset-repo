@@ -1,8 +1,7 @@
 # Performance Monitoring Application of the Proposed Artifact
 A method commonly employed to assess the performance of multi-threaded applications revolves around the examination of the critical path. 
 The critical path provides a visual representation of instances when a request encountered delays or was obstructed. Such paths prove invaluable for uncovering the origins and reasons behind latency occurrences.
-This application utilizes the algorithm provided by the open-source trace analysis software Trace Compass 8.2.0 to compute the critical paths of the relevant threads. You can follow the steps towards this application:
-
+This application utilizes the algorithm provided by the open-source trace analysis software Trace Compass 8.2.0 to compute the critical paths of the relevant threads. You can follow the steps towards this application (You can skip the first two steps and utilize the [collected traces](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Trace-RawData) directly).
 ## Step 1: Environment Setup 
 The process of setting up the required environment is documented in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory. It consists of the following steps:
    - Install LTTNG
