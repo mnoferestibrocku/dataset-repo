@@ -24,9 +24,9 @@ The irregular and undesired fluctuations in system behavior, known as performanc
 # Artifact Applications
  
 We present three separate applications that showcase the use-ability of our proposed artifact. 
-* Performance Monitoring: The first application focuses on performance analysis, highlighting the effective monitoring of system performance using kernel events. Detailed descriptions and relevant figures for this application are available in the "Applications/Performance-Monitoring" directory.
-* Noise Detection: The second application emphasizes noise detection and in-depth root cause analysis through the utilization of kernel events. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
-* Software Phase Detection: Lastly, our artifact finds application in software phase detection through the monitoring of kernel-level events. Each of these applications highlights a distinct capability of our artifact within the domain of performance engineering research topics. You can find descriptions, implementation scripts, and relevant figures related to this application in the "Applications/Noise-Detection" directory.
+* Performance Monitoring: The first application focuses on performance analysis, highlighting the effective monitoring of system performance using kernel events. Detailed descriptions and relevant figures for this application are available in the "[Applications/Performance-Monitoring](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications/Performance-Monitoring)" directory.
+* Noise Detection: The second application emphasizes noise detection and in-depth root cause analysis through the utilization of kernel events. You can find descriptions, implementation scripts, and relevant figures related to this application in the "[Applications/Noise-Detection](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications/Noise-Detection)" directory.
+* Software Phase Detection: Lastly, our artifact finds application in software phase detection through the monitoring of kernel-level events. Each of these applications highlights a distinct capability of our artifact within the domain of performance engineering research topics. You can find descriptions, implementation scripts, and relevant figures related to this application in the "[Applications/Noise-Detection](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications/Phase-Detection)" directory.
 
 
 # Conclusion
