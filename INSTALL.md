@@ -13,7 +13,7 @@ This artifact is divided into three main sections:
    - Building the Experiment Scenarios
    - Collecting Traces
 
-3. Applications over the Collected Trace: The utilization of collected traces for various applications is explained in the "[Applications](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications)" directory. This section covers:
+3. Applications over the Collected Trace: The utilization of the ollected trace for various applications is explained in the "[Applications](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Applications)" directory. This section covers:
    - Performance Monitoring
    - Noise Detection
    - Phase Detection
