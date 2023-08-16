@@ -4,6 +4,18 @@ Welcome to our GitHub repository, where we present an artifact housing kernel-le
 The repository also contains the raw trace data we've collected. Throughout the experiment, we gathered a total of 24,263,691 events by capturing both kernel events and system calls. Our artifact introduces three distinct applications. The first focuses on performance analysis, utilizing kernel events for effective monitoring. The second application is dedicated to noise detection and root cause analysis, leveraging kernel events once again. Lastly, the third application explores software phase detection through kernel-level monitoring. These applications showcase the artifact's ability to aid researchers in assessing system performance, resilience, and efficiency, especially in the face of disruptive conditions.
 
 # Experiment Setup
+To generate the artifact, you need a fresh installation of "Linux Ubuntu 22.04.2 LTS," which should include default applications and be free from any third-party software installations. Following this, the artifact requires a series of steps to set up the essential tools:
+
+*Step 1: Install LTTNG
+*Step 2: Install Java
+*Step 3: Install Elasticsearch and Kibana
+*Step 4: Download and Import Dataset into Elasticsearch
+*Step 5: Create Workloads
+*Step 6: Install stress-ng
+
+Follow these straightforward instructions to establish the necessary tools and prepare your environment for further exploration. The scripts and workloads are detailed in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory.
+
+While you can run the experiment in any environment, it's worth noting that the provided dataset was generated on a machine with specifications outlined in the "[system-info.txt](https://github.com/mnoferestibrocku/dataset-repo/blob/main/system-info.txt)" file.
 
 # Kernel Tracing
 
