@@ -39,13 +39,6 @@ curl -XPUT "http://localhost:9200/dnniotdataset"
 ## Run import.py
 python import.py
 
-
-## Step  5 : Create Workloads
-## Download workloads from the Workloads directory
-curl -XPUT "http://localhost:9200/_watcher/watch/lightloadid" -H "Content-Type: application/json" -d @lightload_watcher.json
-curl -XPUT "http://localhost:9200/_watcher/watch/highloadid" -H "Content-Type: application/json" -d @highload_watcher.json
-
-
-## Step 6 : INSTALL stress-ng
+## Step 5 : INSTALL stress-ng
 sudo apt-get install stress-ng
 
