@@ -41,7 +41,7 @@ python import.py
 
 
 ## Step  5 : Create Workloads
-## Download workloads from the different-loads directory
+## Download workloads from the Workloads directory
 curl -XPUT "http://localhost:9200/_watcher/watch/lightloadid" -H "Content-Type: application/json" -d @lightload_watcher.json
 curl -XPUT "http://localhost:9200/_watcher/watch/highloadid" -H "Content-Type: application/json" -d @highload_watcher.json
 
