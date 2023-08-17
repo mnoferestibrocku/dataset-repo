@@ -1,5 +1,4 @@
 # After installing "Linux Ubuntu 22.04.2 LTS", containing default applications and devoid of any third-party software installations, you need to follow the following steps to install the necessary tools:
-# Note: Download tracing.sh and put it in the same folter
 
 ## Step 1 : INSTALL LTTNG
 ## The docs found at https://lttng.org/docs/v2.12/ a good job of explaining how to install LTTng. However we add the commands here:
