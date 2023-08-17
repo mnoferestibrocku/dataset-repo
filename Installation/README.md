@@ -39,28 +39,28 @@ sudo apt-get install logstash
 
 Here's a step-by-step guide on how to perform the tasks you mentioned:
 
-1. **Download the Dataset:**
+4-1. **Download the Dataset:**
    - Go to the website: [https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot](https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot)
    - Sign in to the site.
    - Download the file "DNN-EdgeIIoT-dataset.csv" from the dataset.
 
-2. **Extract and Move the Dataset:**
+4-2. **Extract and Move the Dataset:**
    - Extract the downloaded dataset to a folder of your choice.
    - Locate the file "DNN-EdgeIIoT-dataset.csv" within the extracted folder.
    - Move the "DNN-EdgeIIoT-dataset.csv" file to your home directory.
 
-3. **Access Kibana:**
+4-3. **Access Kibana:**
    - Open your web browser.
    - In the address bar, enter: [http://localhost:5601/](http://localhost:5601/).
    - This should take you to the Kibana interface.
 
-4. **Login to Kibana:**
+4-4. **Login to Kibana:**
    - You'll be prompted to log in. The default username and password are usually:
      - Username: `elastic`
      - Password: `elastic`
    - Enter these credentials to log in.
 
-5. **Create a New Index in Elasticsearch:**
+4-5. **Create a New Index in Elasticsearch:**
    - Once logged in to Kibana, follow these steps:
      - Click on "Management" in the left-hand navigation menu.
      - Under "Stack Management," click on "Index Patterns."
