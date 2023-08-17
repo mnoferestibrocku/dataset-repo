@@ -1,10 +1,10 @@
 The process of collecting traces is encompassing the following steps:
 
-# Running LTTng
+# Step 1: Running LTTng
 
 Within our artifact, we create a channel consisting of eight buffers, each with a size of 64MB. This channel encompasses all system calls and events. Additionally, we incorporate contextual details like process name, PID, and TID into the events. The details of the tracing process are encapsulated within the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script, which outlines the configurations and procedures for tracing.
 
-# Creating the Experiment Scenarios
+# Step 2: Creating the Experiment Scenarios
 
 Following figure gives an overview of the scenario used to create the system artifact. 
 ![image](https://github.com/mnoferestibrocku/dataset-repo/assets/131692985/5a332c24-baa0-48a9-b823-e9d345110a70)
@@ -26,6 +26,6 @@ To make the artifact more realistic and replicate real-world situations, we intr
 * Memory noise: The memory noise is activated at 1740 seconds and lasts for 120 seconds. The generation of memory noise entails allocating 4GB per each set of 6 workers, who continually call mmap/munmap and write to the allocated memory.
   > stress-ng --vm 6 --vm-bytes 4G --timeout 120
 
-# Collecting Traces
+# Step 3: Collecting Traces
 Traces can be gathered using the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script. When running the script, the first step prompts you to specify the output directory for collecting the traces. However, if you only intend to analyze the traces without capturing them, our pre-collected traces are available at the [Trace-RawData](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Trace-RawData) directory.
 
