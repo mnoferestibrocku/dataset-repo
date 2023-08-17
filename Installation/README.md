@@ -2,6 +2,7 @@ To establish the necessary environment after installing "Linux Ubuntu 22.04.2 LT
 This script encompasses the subsequent steps:
 
 - **Step 1:** Install LTTNG
+  
 The docs found at https://lttng.org/docs/v2.12/ a good job of explaining how to install LTTng. However we add the commands here:
 Add the LTTng Stable 2.12 PPA repository and update the list of packages:
 ```
@@ -15,11 +16,15 @@ sudo apt-get install lttng-modules-dkms
 sudo apt-get install liblttng-ust-dev
 sudo apt-get install liblttng-ust-agent-java
 ```
+
 - **Step 2:** Install Java
+
 ```
 sudo apt-get install openjdk-18-jdk
 ```
+
 - **Step 3:** Install Elasticsearch and Kibana
+  
 ```
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 sudo apt-get install apt-transport-https
@@ -28,7 +33,9 @@ sudo apt-get update && sudo apt-get install elasticsearch
 sudo apt-get install kibana
 sudo apt-get install logstash
 ```
+
 - **Step 4:** Download and Import Dataset into Elasticsearch
+
 Sign to the site and Download the file from https://www.kaggle.com/datasets/mohamedamineferrag/edgeiiotset-cyber-security-dataset-of-iot-iiot
 After extract the dataset, move "Edge-IIoTset dataset/Selected dataset for ML and DL/DNN-EdgeIIoT-dataset.csv" into the home dirextory
 Go to address http://localhost:5601/ in your browser and login to kibana (default username='elastic' and password='elastic')
@@ -41,13 +48,17 @@ Run import.py
 ```
 python import.py
 ```
+
 - **Step 5:** Create Workloads
+
 Download workloads from the Workloads directory
 ```
 curl -XPUT "http://localhost:9200/_watcher/watch/lightloadid" -H "Content-Type: application/json" -d @lightload_watcher.json
 curl -XPUT "http://localhost:9200/_watcher/watch/highloadid" -H "Content-Type: application/json" -d @highload_watcher.json
 ```
+
 - **Step 6:** Install stress-ng
+
 ```
 sudo apt-get install stress-ng
 ```
