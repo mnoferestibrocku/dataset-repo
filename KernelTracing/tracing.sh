@@ -14,6 +14,7 @@ lttng add-context --kernel --channel=my-kernel-channel --type=pid
 lttng add-context --kernel --channel=my-kernel-channel --type=tid
 read -p "Press enter to start tracing for $duration s"
 
+echo "${time} : START Workloads!!!"
 curl -XPOST "http://localhost:9200/_watcher/watch/lightloadid/_start"
 curl -XPOST "http://localhost:9200/_watcher/watch/highloadid/_start"
 
