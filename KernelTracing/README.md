@@ -1,6 +1,7 @@
 The process of collecting traces is encompassing the following steps:
 
 1- Running LTTng
+
 Within our artifact, we create a channel consisting of eight buffers, each with a size of 64MB. This channel encompasses all system calls and events. Additionally, we incorporate contextual details like process name, PID, and TID into the events. The details of the tracing process are encapsulated within the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script, which outlines the configurations and procedures for tracing.
 
 2- Creating the Experiment Scenarios
