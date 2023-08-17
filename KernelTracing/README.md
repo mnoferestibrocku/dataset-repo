@@ -12,13 +12,18 @@ To assess the system's performance, we define two separate workloads:
 * Light-Load Scenario: This workload involves running two reports every 20 seconds. It is designed to simulate a situation with low processing demands, helping us evaluate the system's performance under minimal stress.
 * Heavy-Load Scenario: In this workload, we generate 10 reports every 40 seconds. This aims to simulate a scenario with more data and higher computational demands, putting increased processing pressure on the system.
 
-The irregular and undesired fluctuations in system behavior, known as performance noise, can impact the expected dependability of a system. To make the artifact more realistic and replicate real-world situations, we introduce four types of noise into the system. 
+To make the artifact more realistic and replicate real-world situations, we introduce four types of noise into the system. 
 * CPU noise: The CPU noise is initiated  after 1200 seconds and lasts for 120 seconds. We initiate the stress-ng tool to create CPU noise by performing matrix multiplication with a matrix size of 256x256 with 6 workers for a duration of 120 seconds.
   > stress-ng --matrix 6 --matrix-method prod --matrix-size 256 --timeout 120
   
-* I/O noise: The I/O noise is activated at 1380 seconds and continues for 120 seconds. It emulates increased input/output (I/O) operations or data transfer activities that can potentially impact disk or storage performance. This noise enables the assessment of the system's performance when dealing with high I/O loads and its ability to handle data-intensive operations.
-* Network noise: The network noise is introduced at 1560 seconds and persists for 120 seconds. It simulates network congestion, latency, or fluctuations in network connectivity, which can affect data transmission and communication between system components. By incorporating network noise, we can evaluate the system's resilience to network-related challenges and its ability to maintain effective data exchange under adverse network conditions.
-* Memory noise: The memory noise is activated at 1740 seconds and lasts for 120 seconds. It represents increased memory usage or memory-related issues that can impact system performance and stability. This noise helps assess the system's ability to handle memory-intensive tasks and its responsiveness in memory-constrained situations.
+* I/O noise: The I/O noise is activated at 1380 seconds and continues for 120 seconds. For I/O noise, we trigger the stress-ng tool to generate I/O stress by employing a mix of different I/O operations with 6 concurrent workers for a duration of 120 seconds.
+  > stress-ng --iomix 6 --timeout 120
+
+* Network noise: The network noise is introduced at 1560 seconds and persists for 120 seconds. INetwork noise is introduced using 6 workers that engage in various socket stress activities. This includes pairs of client/server processes executing rapid connect, send, and receive operations, as well as disconnects on the local host.
+  > stress-ng --sock 6 --timeout 120
+
+* Memory noise: The memory noise is activated at 1740 seconds and lasts for 120 seconds. The generation of memory noise entails allocating 4GB per each set of 6 workers, who continually call mmap/munmap and write to the allocated memory.
+  > stress-ng --vm 6 --vm-bytes 4G --timeout 120
 
 3- Collecting Traces
 Traces can be gathered using the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/tracing.sh)" script. When running the script, the first step prompts you to specify the output directory for collecting the traces. However, if you only intend to analyze the traces without capturing them, our pre-collected traces are available at the [Trace-RawData](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Trace-RawData) directory.
