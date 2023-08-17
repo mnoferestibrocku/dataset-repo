@@ -10,8 +10,7 @@ To generate the artifact, you need a fresh installation of "Linux Ubuntu 22.04.2
 * Step 2: Install Java
 * Step 3: Install Elasticsearch and Kibana
 * Step 4: Download and Import Dataset into Elasticsearch
-* Step 5: Create Workloads
-* Step 6: Install stress-ng
+* Step 5: Install stress-ng
 
 Follow these straightforward instructions to establish the necessary tools and prepare your environment for further exploration. The scripts and workloads are detailed in the "[Installation](https://github.com/mnoferestibrocku/dataset-repo/tree/main/Installation)" directory.
 
