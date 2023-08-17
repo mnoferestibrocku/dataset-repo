@@ -25,8 +25,6 @@ The collection of traces is detailed in the "[KernelTracing](https://github.com/
    - Step 2: Building the Experiment Scenarios
    - Step 3: Collecting Traces
 
-In our artifact, we establish a channel composed of eight buffers, each boasting a size of 64MB. All system calls and events are enabled within this channel. Furthermore, we include context information including process name, PID, and TID to the events. The specifics of tracing are encapsulated in the "[tracing.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing)" directory, which outlines the tracing configurations and procedures.
-
 
 # Artifact Applications
  
