@@ -71,24 +71,14 @@ Here's a step-by-step guide on how to perform the tasks you mentioned:
      - Click the "Create index pattern" button.
 
 That's it! You've successfully set up the dataset in Elasticsearch through Kibana. You can now proceed with your analysis using the tools and features provided by Elasticsearch and Kibana.
-```
 
-```
 Download import.py and put it in the home directory
 Run import.py
 ```
 python import.py
 ```
 
-- **Step 5:** Create Workloads
-
-Download workloads from the Workloads directory
-```
-curl -XPUT "http://localhost:9200/_watcher/watch/lightloadid" -H "Content-Type: application/json" -d @lightload_watcher.json
-curl -XPUT "http://localhost:9200/_watcher/watch/highloadid" -H "Content-Type: application/json" -d @highload_watcher.json
-```
-
-- **Step 6:** Install stress-ng
+- **Step 5:** Install stress-ng
 
 ```
 sudo apt-get install stress-ng
