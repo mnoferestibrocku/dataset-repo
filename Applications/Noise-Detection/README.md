@@ -9,7 +9,6 @@ The process of setting up the required environment is documented in the "[Instal
    - Install Java
    - Install Elasticsearch and Kibana
    - Download and Import Dataset into Elasticsearch
-   - Create Workloads
    - Install stress-ng
 
 ## Step 2: Trace Collection 
