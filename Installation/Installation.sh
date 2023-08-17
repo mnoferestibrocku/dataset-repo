@@ -37,7 +37,7 @@ sudo apt-get install logstash
 curl -XPUT "http://localhost:9200/dnniotdataset"
 ## Download import.py and put it in the home directory
 ## Run import.py
-python3 import.py
+python import.py
 
 
 ## Step  5 : Create Workloads
