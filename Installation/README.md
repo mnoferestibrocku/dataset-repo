@@ -65,7 +65,7 @@ Here's a step-by-step guide on how to perform the tasks you mentioned:
      - Click on "Management" in the left-hand navigation menu.
      - Under "Stack Management," click on "Index Patterns."
      - Click on the "Create index pattern" button.
-     - In the "Index pattern" field, enter the name of your index pattern.(e.g., "dnniotdataset").
+     - In the "Index pattern" field, enter the name of your index pattern.(In out scripts we use "dnniotdataset" as the index name).
      - Click the "Next step" button.
      - In the "Time Filter field name" dropdown, select the appropriate time field for your dataset (if applicable).
      - Click the "Create index pattern" button.
