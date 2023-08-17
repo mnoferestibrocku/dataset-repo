@@ -5,8 +5,7 @@ This artifact is divided into three main sections:
    - Step 2: Install Java
    - Step 3: Install Elasticsearch and Kibana
    - Step 4: Download and Import Dataset into Elasticsearch
-   - Step 5: Create Workloads
-   - Step 6: Install stress-ng
+   - Step 5: Install stress-ng
 
 2. Trace Collection: The collection of traces is detailed in the "[KernelTracing](https://github.com/mnoferestibrocku/dataset-repo/tree/main/KernelTracing)" directory, which includes:
    - Step 1: Running LTTng
