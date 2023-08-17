@@ -11,9 +11,9 @@ Following figure gives an overview of the scenario used to create the system art
 
 To assess the system's performance, we define two separate workloads:
 * Light-Load Scenario: This workload involves running two reports every 20 seconds.
-  > curl -XPOST "http://localhost:9200/_watcher/watch/lightloadid/_start"
+  > bash [lightquery.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/lightquery.sh) &
 * Heavy-Load Scenario: In this workload, we generate 10 reports every 40 seconds.
-  > curl -XPOST "http://localhost:9200/_watcher/watch/highloadid/_start"
+  > bash [heavyquery.sh](https://github.com/mnoferestibrocku/dataset-repo/blob/main/KernelTracing/heavyquery.sh) &
 
 To make the artifact more realistic and replicate real-world situations, we introduce four types of noise into the system. 
 * CPU noise: The CPU noise is initiated  after 1200 seconds and lasts for 120 seconds. We initiate the stress-ng tool to create CPU noise by performing matrix multiplication with a matrix size of 256x256 with 6 workers for a duration of 120 seconds.
